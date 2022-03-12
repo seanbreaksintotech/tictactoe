@@ -14,6 +14,16 @@ h1{
     font-size: 50px;
     background-color: #DADAD6;
     text-shadow:-5px 5px 0 rgb(73, 65, 65)
+    
+}
+p{
+  margin: 0;
+  padding: 0;
+  
+}
+
+p:hover{
+  animation: rotate 0.7s  ease-in-out both;
 }
 
 
@@ -33,11 +43,15 @@ div.game {
     border: 3px dashed  #888886 ;
     
     box-sizing: border-box;
+    font-size: 70px;
+    text-align: center;
+    line-height: 100px;
     /* box-shadow:0 0 10px 4px rgba(152, 245, 133, 0.418) ; */
     
   }
   .box:hover{
       background-color: rgba(116, 105, 105, 0.103);
+      cursor: pointer;
   }
   
   .gamecontain{
@@ -78,5 +92,37 @@ div.game {
       border-right: none;
   }
 
+.buttonbody{
+  
+    display: flex;
+    justify-content: center;
+    margin-left: 167px;
+    
+
+}
+.button:hover{
 
 
+  animation: rotate 0.7s  ease-in-out both;
+}
+
+@keyframes rotate
+{
+  0%
+{
+transform: rotate(0deg) translate3d(0,0,0);
+}
+25%
+{
+transform: rotate(3deg) translate3d(0,0,0);
+} 50%
+{
+transform: rotate(-3deg) translate3d(0,0,0);
+} 75%
+{
+transform: rotate(1deg) translate3d(0,0,0);
+}  100%
+{
+transform: rotate(0deg) translate3d(0,0,0);
+}
+}
